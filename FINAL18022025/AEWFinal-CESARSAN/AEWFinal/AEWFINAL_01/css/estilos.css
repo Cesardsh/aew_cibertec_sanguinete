@@ -1,0 +1,257 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/FONDO.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #1D3C6A;
+    text-align: left;
+}
+
+header {
+    background-color: rgba(29, 60, 106, 0.9);
+    color: #FFFFFF;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header .logo img {
+    width: 80px;
+    height: auto;
+    background-color: #FFFFFF;
+    padding: 5px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+header .texto-encabezado {
+    text-align: center;
+    flex-grow: 1;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: rgba(29, 60, 106, 0.9);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul.menu li {
+    position: relative;
+}
+
+nav ul.menu li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul.menu li a:hover {
+    background-color: #E9803E;
+}
+
+nav ul.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(29, 60, 106, 0.9);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+nav ul.subsubmenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: rgba(29, 60, 106, 0.9);
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+}
+
+nav ul.menu li:hover > ul.submenu {
+    display: block;
+}
+
+nav ul.submenu li:hover > ul.subsubmenu {
+    display: block;
+}
+
+nav ul.submenu li,
+nav ul.subsubmenu li {
+    width: 200px;
+}
+
+nav ul.submenu li a,
+nav ul.subsubmenu li a {
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+nav ul.submenu li a:hover,
+nav ul.subsubmenu li a:hover {
+    background-color: #E9803E;
+}
+
+main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: left; 
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+}
+
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: rgba(29, 60, 106, 0.9);
+    color: #FFFFFF; 
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.btn {
+    background-color: #E9803E;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #D2691E;
+}
+
+.equipo-docente {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.docente-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.docente-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    
+}
+
+.docente-card img {
+    width: 100%;
+    height: auto;
+}
+
+.docente-card h3 {
+    margin: 15px 0;
+    font-size: 1.2em;
+}
+
+section#infraestructura {
+    margin: 0 auto;        
+    text-align: justify;
+    max-width: 600px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#convenios {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#convenios h2 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#convenios p {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+
+#convenios ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#convenios li {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.banner-p {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.videos-mp4 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+.video-infraestructura  {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
